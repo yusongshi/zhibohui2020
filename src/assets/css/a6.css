@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.a6content {
+  width: 1193px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -310px auto 0;
+  /* 3d轮播图样式 */
+}
+
+.a6content img.titimg {
+  display: block;
+}
+
+.a6content #wrap3d {
+  width: 1000px;
+  margin: 0 auto;
+  opacity: 0;
+  position: relative;
+}
+
+.a6content .cloud9-item {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  opacity: 0.98;
+  cursor: pointer;
+}
+
+.a6content .cloud9-item.active .h5-mask {
+  display: none;
+  background: transparent;
+}
+
+.a6content .cloud9-item.active:after {
+  display: none;
+}
+
+.a6content .cloud9-item.active.show-code .h5-mask {
+  display: block;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.a6content .cloud9-item.active.show-code .code {
+  display: inline-block;
+}
+
+.a6content .cloud9-item.active.show-code p {
+  display: block;
+}
+
+.a6content .cloud9-item.active a {
+  transition: all 0.3s ease;
+}
+
+.a6content .cloud9-item.active a:hover {
+  transform: scale(1.45);
+}
+
+.a6content .cloud9-item a {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 320px;
+}
+
+.a6content .cloud9-item a span {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(1, 1, 1, 0.5);
+  font-size: 14px;
+  color: #ffffff;
+  overflow: hidden;
+  line-height: 20px;
+  padding: 5px 0;
+}
+
+.a6content .cloud9-item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
+}
+
+.a6content .cloud9-item .img-h5bg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.a6content .h5-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.a6content .h5-mask .code {
+  display: none;
+  margin-top: 90px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.a6content .h5-mask p {
+  display: none;
+  width: 100%;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font: normal 16px SimHei;
+  color: #fff;
+}
+
+.a6content #showcase {
+  width: 1100px;
+  height: 512px;
+  margin-left: -49px;
+}
+/*# sourceMappingURL=a6.css.map */

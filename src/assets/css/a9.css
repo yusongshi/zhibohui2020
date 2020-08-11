@@ -1,0 +1,26 @@
+.pinglunbox {
+  width: 1100px;
+  height: 550px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: -318px auto 0;
+}
+
+.pinglunbox > img.comtit {
+  display: block;
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: 3;
+}
+
+.pinglunbox .plbox {
+  width: 1100px;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+/*# sourceMappingURL=a9.css.map */

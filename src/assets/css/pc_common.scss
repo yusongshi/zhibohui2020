@@ -1,0 +1,111 @@
+@charset "utf-8";
+/***************公共样式**************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  font-family: Microsoft YaHei;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+img {
+  border: 0;
+}
+dl {
+  margin: 0;
+  padding: 0;
+  dd {
+    margin: 0;
+  }
+}
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+.clear {
+  clear: both;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+input,
+select {
+  padding: 0;
+  border: 1px solid #dcdcdc;
+  display: block;
+  background: #fff;
+  outline: none;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+    background: #fff;
+    color: #333;
+    border: 1px solid #dcdcdc;
+  }
+}
+[v-cloak]{display: none;}
+@mixin font-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+@mixin font-overflow-more($index) {
+display: block;
+display: -webkit-box;
+/* autoprefixer: off */
+-webkit-box-orient: vertical;
+/* autoprefixer: on */
+-webkit-line-clamp: $index;
+overflow: hidden;
+text-overflow: ellipsis;
+}

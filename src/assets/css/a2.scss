@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import 'commoninclude';
+
+
+
+.a2content {
+    $linecolor: #d6c8b8;
+    width: 1195px;
+    height: 452px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -226px auto 0;
+    div.leftbox{
+        width: 549px;
+        float: left;
+        background: url(../img/a2/a2-1.png) left top no-repeat;
+        padding-top: 134px;
+        h1{
+            font-size: 24px;
+        }
+        ul{
+            padding-top: 15px;
+            font-size: 16px;
+            line-height: 40px;
+            li{
+                &:hover{
+                    @include list-hover();
+                }
+                a{
+                    display: block;
+                    background: url(../img/common/dian.jpg) left center no-repeat;
+                    padding-left: 15px;
+                }
+            }
+        }
+        img.more{
+            display: block;
+            padding-top: 18px;
+        }
+    }
+    div.rightbox{
+        width: 646px;
+        height: 452px;
+        float: right;
+        background: url(../img/a2/a2-2.png) center left no-repeat;
+        #slideBox_a2{
+            $height: 370px;
+            width: 600px;
+            height: $height;
+            padding: 76px 0 0 20px;
+            .hd_a2{
+                position: absolute;
+                z-index: 1;
+                top: 198px;
+                right: 0;
+                ul{
+                    li{
+                        background: #999;
+                        width: 10px;
+                        height: 10px;
+                        margin-top: 9px;
+                        border-radius: 50%;
+                        &.on{
+                            background: #02d4fe;
+                        }
+                    }
+                }
+            }
+            .bd_a2{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                ul{
+                    li{
+                        height: $height;
+                        position: relative;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        h1{
+                            width: 100%;
+                            position: absolute;
+                            bottom:0;
+                            left: 0;
+                            color: #fff;
+                            text-align: center;
+                            font-size: 16px;
+                            height: 40px;
+                            line-height: 40px;
+                            background: rgba($color: #000000, $alpha: 0.4);
+                            z-index: 2;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

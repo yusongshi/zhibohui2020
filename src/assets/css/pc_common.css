@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/***************公共样式**************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Microsoft YaHei;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dl dd {
+  margin: 0;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select {
+  padding: 0;
+  border: 1px solid #dcdcdc;
+  display: block;
+  background: #fff;
+  outline: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: #fff;
+  color: #333;
+  border: 1px solid #dcdcdc;
+}
+
+[v-cloak] {
+  display: none;
+}
+/*# sourceMappingURL=pc_common.css.map */

@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import 'commoninclude';
+.a4content{
+    width: 1193px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -241px auto 0;
+    img.titimg{
+        display: block;
+    }
+    .a4_box{
+        overflow: hidden;
+        .a4_left{
+            width: 233px;
+            height: 374px;
+            float: left;
+            background: url(../img/a4/a4-2.png) center bottom no-repeat;
+            h1{
+                font-size: 22px;
+                line-height: 36px;
+                padding: 170px 0 0 20px;
+            }
+            img.more{
+                display: block;
+                position: absolute;
+                left: 20px;
+                bottom: 20px;
+            }
+        }
+        .a4_right{
+            width: calc(940px - 35px);
+            height:  calc(353px - 30px);
+            padding: 30px 0 0 35px;
+            float: right;
+            margin-top: 20px;
+            background: url(../img/a4/a4-3.png) left center no-repeat;
+            div.btn{
+                width: 143px;
+                height: 36px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 36px;
+                float: left;
+                margin-right: 20px;
+                &.on{
+                    background: url(../img/a4/a4-4.png);
+                }
+            }
+            div.cntt{
+                overflow: hidden;
+                img.jdt{
+                    float: left;
+                    display: block;
+                    width: 355px;
+                    height: 223px;
+                    border:1px solid #3445e3;
+                    border-radius: 14px;
+                    margin-top: 10px;
+                }
+                ul.liebiao{
+                    float: right;
+                    width: 515px;
+                    li{
+                        font-size: 16px;
+                        line-height: 40px;
+                        &:hover{
+                            @include list-hover();
+                        }
+                        a{
+                            display: block;
+                            background: url(../img/common/dian.jpg) left center no-repeat;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

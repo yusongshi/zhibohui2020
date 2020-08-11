@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import 'commoninclude';
+
+.a5content{
+    width: 1193px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -239px auto 0;
+    img.titimg{
+        display: block;
+    }
+    div.a5_box{
+        position: relative;
+        padding-top: 35px;
+        div.a5_left{
+            h1{
+                font-size: 24px;
+                line-height: 46px;
+                height: 46px;
+            }
+            ul{
+                li{
+                    font-size: 16px;
+                    line-height: 55px;
+                    height: 55px;
+                    margin: 10px 0;
+                    background: url(../img/a5/a5-2.png) left center no-repeat;
+                    padding-left: 15px;
+                    &:hover{
+                        @include list-hover();
+                        padding-left: 20px;
+                    }
+                    a{
+                        height: 55px;
+                        padding-left: 15px;
+                        display: block;
+                        background: url(../img/common/dian.jpg) left center no-repeat;
+                    }
+                }
+            }
+            img.more{
+                display: block;
+                padding-top: 4px;
+            }
+        }
+        div.threeimg{
+            position: absolute;
+            left: 500px;
+            top: 30px;
+            div.xiao{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 243px;
+                height: 287px;
+                margin: 25px;
+                background-image: url(../img/a5/a5-3.png);
+                background-repeat: no-repeat;
+                &:first-child{
+                    left: 0;
+                    padding: 6px 0 0 6px;
+                    background-position: left top;
+                }
+                &:nth-child(2){
+                    margin-top: 0;
+                    width: 279px;
+                    height: 331px;
+                    padding: 6px 8px 0 0;
+                    background-image: url(../img/a5/a5-4.png);
+                    background-position: right top;
+                    left: 196px;
+                }
+                &:nth-child(3){
+                    left: 430px;
+                    padding:  6px 8px 0 0;
+                    background-position: right top;
+                }
+            }
+        }
+    }
+}

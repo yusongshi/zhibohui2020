@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@import 'commoninclude';
+
+.a3content{
+    width: 1193px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -246px auto 0;
+    div.titimg{
+        background: url(../img/a3/2_03.png);
+        width: 1193px;
+        height: 108px;
+        img{
+            display: block;
+            float: right;
+            padding: 47px 7px 0 0;
+        }
+    }
+    ul.fourimg{
+        width: 1179px;
+        margin: 22px auto 0;
+        display: flex;
+        justify-content: space-between;
+        li{
+            width: 290px;
+            div.img{
+                width: 100%;
+                height: 156px;
+                position: relative;
+                img{
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    &:first-child{
+                        z-index: 2;
+                        display: none;
+                    }
+                    &:last-child{
+                        z-index: 1;
+                    }
+                }
+            }
+            div.title{
+                height: 80px;
+                a{
+                    display: block;
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding: 16px 14px 0;
+                }
+            }
+        }
+    }
+    ul.articlelist{
+        width: calc(1179px - 52px);
+        height: 70px;
+        padding: 15px 26px;
+        margin: 26px auto 0;
+        overflow: hidden;
+        background: url(../img/a3/2_21.png);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            width: 310px;
+            &:hover{
+                width: 300px;
+                @include list-hover();
+            }
+            a{
+                padding-left: 15px;
+                display: block;
+                background: url(../img/common/dian.jpg) left center no-repeat;
+            }
+        }
+    }
+}

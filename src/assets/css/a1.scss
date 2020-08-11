@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    background: #fff;
+    font-family: "微软雅黑",Arial , Helvetica, Tahoma;
+    font-size: 16px;
+    color: #fff;
+}
+body, h1, h2, h3, h4, h5, h6,form {
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+img {
+    border: 0;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+    dd {
+        margin: 0;
+    }
+}
+
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+.clear {
+    clear: both;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/*******全屏切换********/
+.fullslide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .tempWrap {
+        width: 100%!important;
+        height: 100%;
+    }
+    .section {
+        width: 100%;
+        height: 100%;
+        background: #faf1dd;
+        position: relative;
+        overflow: hidden !important;
+    }
+    .fullslide_bd{
+        position: relative;
+        z-index: 2;
+    }
+    .fullslide_hd {
+        $width: 110px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: $width;
+        margin-top: -200px;
+        z-index: 3;
+        transition: right 0.5s;
+        img.subiao{
+            display: block;
+            position: absolute;
+            bottom: -80px;
+            left: 34px;
+        }
+        ul {
+            padding-top: 0;
+            width: $width;
+            float: right;
+            li {
+                width: $width;
+                font-size: 20px;
+                line-height: 60px;
+                cursor: pointer;
+                color: #b0acad;
+                &.on, &:hover{
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.fullslide .fullslide_bd,.fullslide .fullslide_bd .box {
+    width: 100%;
+    height: 100%;
+}
+/*******全屏切换-END********/
+.bgStyle {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*******首屏********/
+/**背景视频**/
+.bannerAction {
+    position: relative;
+    .danghui{
+        width: 1000px;
+        height: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        img{
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: -50px;
+        }
+    }
+    .syText {
+        width: 975px;
+        height: 330px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: -180px auto 0;
+        z-index: 3;
+        img {
+            display: block;
+        }
+    }
+    .ph {
+        width: 500px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.sbbtn {
+    width: 70px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin: auto;
+    z-index: 3;
+    h1 {
+        font-size: 14px;
+        color: red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+/*******首屏-END********/
+
+
+/*******2两会要闻********/
+@import 'a2';
+/*******2两会要闻-END********/
+
+/*******3聚焦重庆团********/
+@import 'a3';
+/*******3聚焦重庆团-END********/
+
+/*******4融媒策划********/
+@import 'a4';
+/*******4融媒策划-END********/
+
+/************5一起读报告*************/
+@import 'a5';
+/************5一起读报告-END*************/
+
+/************6汇聚好声音*************/
+@import 'a6';
+/************6汇聚好声音-END*************/
+
+/************7两会V观*************/
+@import 'a7';
+/************7两会V观-END*************/
+
+/************8精彩图集*************/
+@import 'a8';
+/************8精彩图集-END*************/
+
+/************9评论*************/
+@import 'a9';
+/************9评论-END*************/
+
+/*********动画效果**********/
+@-ms-keyframes part{
+    0%{ margin-top: 0; }
+    50%{ margin-top: 15px; }
+    100%{ margin-top: 0; }
+}
+@-moz-keyframes part{
+    0%{ margin-top: 0; }
+    50%{ margin-top: 15px; }
+    100%{ margin-top: 0; }
+}
+@-o-keyframes part{
+    0%{ margin-top: 0; }
+    50%{ margin-top: 15px; }
+    100%{ margin-top: 0; }
+}
+@-webkit-keyframes part{
+    0%{ margin-top: 0; }
+    50%{ margin-top: 15px; }
+    100%{ margin-top: 0; }
+}
+
+@keyframes part{
+    0%{ margin-top: 0; }
+    50%{ margin-top: 15px; }
+    100%{ margin-top: 0; }
+}
+.hero{
+    animation:'part' 1.5s ease-in-out 0s infinite;
+    -o-animation:'part' 1.5s ease-in-out 0s infinite;
+    -webkit-animation:'part' 1.5s ease-in-out 0s infinite;
+}
+
+@-ms-keyframes part1{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);  }
+    to{  }
+}
+@-moz-keyframes part1{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);  }
+    to{  }
+}
+@-o-keyframes part1{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);  }
+    to{  }
+}
+@-webkit-keyframes part1{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);  }
+    to{  }
+}
+
+@keyframes part1{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);  }
+    to{  }
+}
+.hero1{
+    animation:'part1' 1s ease-in-out 0s normal;
+    -o-animation:'part1' 1s ease-in-out 0s normal;
+    -webkit-animation:'part1' 1s ease-in-out 0s normal;
+}
+
+@-ms-keyframes part2{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    42.8%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    to{  }
+}
+@-moz-keyframes part2{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    42.8%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    to{  }
+}
+@-o-keyframes part2{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    42.8%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    to{  }
+}
+@-webkit-keyframes part2{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    42.8%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    to{  }
+}
+@keyframes part2{
+    from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    42.8%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);}
+    to{  }
+}
+.hero2{
+    animation:'part2' 1.5s ease-in-out 0s normal;
+    -ms-animation:part2 1.5s ease-in-out 0s normal;
+    -moz-animation:part2 1.5s ease-in-out 0s normal;
+    -o-animation:'part2' 1.5s ease-in-out 0s normal;
+    -webkit-animation:'part2' 1.5s ease-in-out 0s normal;
+}
+/*********动画效果-END**********/

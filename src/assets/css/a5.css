@@ -1,0 +1,96 @@
+@charset "UTF-8";
+.a5content {
+  width: 1193px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -239px auto 0;
+}
+
+.a5content img.titimg {
+  display: block;
+}
+
+.a5content div.a5_box {
+  position: relative;
+  padding-top: 35px;
+}
+
+.a5content div.a5_box div.a5_left h1 {
+  font-size: 24px;
+  line-height: 46px;
+  height: 46px;
+}
+
+.a5content div.a5_box div.a5_left ul li {
+  font-size: 16px;
+  line-height: 55px;
+  height: 55px;
+  margin: 10px 0;
+  background: url(../img/a5/a5-2.png) left center no-repeat;
+  padding-left: 15px;
+}
+
+.a5content div.a5_box div.a5_left ul li:hover {
+  padding-left: 10px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.5s;
+  padding-left: 20px;
+}
+
+.a5content div.a5_box div.a5_left ul li a {
+  height: 55px;
+  padding-left: 15px;
+  display: block;
+  background: url(../img/common/dian.jpg) left center no-repeat;
+}
+
+.a5content div.a5_box div.a5_left img.more {
+  display: block;
+  padding-top: 4px;
+}
+
+.a5content div.a5_box div.threeimg {
+  position: absolute;
+  left: 500px;
+  top: 30px;
+}
+
+.a5content div.a5_box div.threeimg div.xiao {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 243px;
+  height: 287px;
+  margin: 25px;
+  background-image: url(../img/a5/a5-3.png);
+  background-repeat: no-repeat;
+}
+
+.a5content div.a5_box div.threeimg div.xiao:first-child {
+  left: 0;
+  padding: 6px 0 0 6px;
+  background-position: left top;
+}
+
+.a5content div.a5_box div.threeimg div.xiao:nth-child(2) {
+  margin-top: 0;
+  width: 279px;
+  height: 331px;
+  padding: 6px 8px 0 0;
+  background-image: url(../img/a5/a5-4.png);
+  background-position: right top;
+  left: 196px;
+}
+
+.a5content div.a5_box div.threeimg div.xiao:nth-child(3) {
+  left: 430px;
+  padding: 6px 8px 0 0;
+  background-position: right top;
+}
+/*# sourceMappingURL=a5.css.map */
