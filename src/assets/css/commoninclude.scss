@@ -1,8 +1,25 @@
 @charset "utf-8";
 @mixin list-hover {
-    padding-left: 10px;
-    transition: all 0.5s;
-    -moz-transition: all 0.5s; /* Firefox 4 */
-    -webkit-transition: all 0.5s; /* Safari 和 Chrome */
-    -o-transition: all 0.5s;
+  padding-left: 10px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari 和 Chrome */
+  -o-transition: all 0.5s;
+}
+
+@mixin font-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin font-overflow-more($index) {
+  display: block;
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: $index;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -19,7 +19,7 @@ jQuery(".fullslide").slide({
     pnLoop: false,
     prevCell: ".fullslide_prev",
     nextCell: ".fullslide_next",
-    defaultIndex: 4,
+    defaultIndex: 0,
     pageStateCell: '',
     startFun: function (i) {
         flag = false; //全屏正在滚动的时候禁止鼠标滚轮创建新滚动事件。

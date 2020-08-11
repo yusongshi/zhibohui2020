@@ -97,5 +97,9 @@
   display: block;
   background: url(../img/common/dian.jpg) left center no-repeat;
   padding-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 40px;
 }
 /*# sourceMappingURL=a4.css.map */

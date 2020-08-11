@@ -64,6 +64,14 @@
   font-size: 20px;
   line-height: 24px;
   padding: 16px 14px 0;
+  display: block;
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .a3content ul.articlelist {
@@ -98,5 +106,9 @@
   padding-left: 15px;
   display: block;
   background: url(../img/common/dian.jpg) left center no-repeat;
+  height: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=a3.css.map */

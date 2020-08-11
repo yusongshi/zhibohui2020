@@ -72,6 +72,8 @@
                             display: block;
                             background: url(../img/common/dian.jpg) left center no-repeat;
                             padding-left: 15px;
+                            @include font-overflow();
+                            height: 40px;
                         }
                     }
                 }

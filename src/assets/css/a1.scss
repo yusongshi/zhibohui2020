@@ -68,6 +68,25 @@ dl {
 }
 
 /*******全屏切换********/
+.bodys{
+    background: url(../img/common/bg.jpg) center center no-repeat;
+    background-size: cover;
+    .bgvideo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10px;
+        overflow: hidden;
+        z-index: 100;
+        video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
 .fullslide {
     width: 100%;
     height: 100%;
@@ -79,7 +98,6 @@ dl {
     .section {
         width: 100%;
         height: 100%;
-        background: #faf1dd;
         position: relative;
         overflow: hidden !important;
     }

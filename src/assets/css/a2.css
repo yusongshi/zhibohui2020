@@ -18,6 +18,10 @@
 
 .a2content div.leftbox h1 {
   font-size: 24px;
+  height: 31px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .a2content div.leftbox ul {
@@ -40,6 +44,10 @@
   display: block;
   background: url(../img/common/dian.jpg) left center no-repeat;
   padding-left: 15px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .a2content div.leftbox img.more {
@@ -56,7 +64,7 @@
 
 .a2content div.rightbox #slideBox_a2 {
   width: 600px;
-  height: 370px;
+  height: 350px;
   padding: 76px 0 0 20px;
 }
 
@@ -86,7 +94,7 @@
 }
 
 .a2content div.rightbox #slideBox_a2 .bd_a2 ul li {
-  height: 370px;
+  height: 350px;
   position: relative;
 }
 

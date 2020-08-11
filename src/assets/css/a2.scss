@@ -20,6 +20,8 @@
         padding-top: 134px;
         h1{
             font-size: 24px;
+            height: 31px;
+            @include font-overflow();
         }
         ul{
             padding-top: 15px;
@@ -33,6 +35,8 @@
                     display: block;
                     background: url(../img/common/dian.jpg) left center no-repeat;
                     padding-left: 15px;
+                    height: 40px;
+                    @include font-overflow();
                 }
             }
         }
@@ -47,7 +51,7 @@
         float: right;
         background: url(../img/a2/a2-2.png) center left no-repeat;
         #slideBox_a2{
-            $height: 370px;
+            $height: 350px;
             width: 600px;
             height: $height;
             padding: 76px 0 0 20px;

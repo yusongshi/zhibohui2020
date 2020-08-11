@@ -53,6 +53,7 @@
                     font-size: 20px;
                     line-height: 24px;
                     padding: 16px 14px 0;
+                    @include font-overflow-more(2);
                 }
             }
         }
@@ -78,6 +79,8 @@
                 padding-left: 15px;
                 display: block;
                 background: url(../img/common/dian.jpg) left center no-repeat;
+                height: 21px;
+                @include font-overflow();
             }
         }
     }

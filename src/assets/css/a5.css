@@ -18,9 +18,17 @@
 }
 
 .a5content div.a5_box div.a5_left h1 {
+  width: 570px;
   font-size: 24px;
   line-height: 46px;
   height: 46px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.a5content div.a5_box div.a5_left ul {
+  width: 570px;
 }
 
 .a5content div.a5_box div.a5_left ul li {
@@ -48,6 +56,9 @@
   padding-left: 15px;
   display: block;
   background: url(../img/common/dian.jpg) left center no-repeat;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .a5content div.a5_box div.a5_left img.more {
