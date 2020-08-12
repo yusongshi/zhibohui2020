@@ -1,2 +1,1 @@
-require('./src/assets/js/index.js');
-
+import './src/assets/js/index'
