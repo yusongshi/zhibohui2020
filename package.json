@@ -13,7 +13,6 @@
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.0",
     "file-loader": "^6.0.0",
-    "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "html-withimg-loader": "^0.1.16",
     "style-loader": "^1.2.1",

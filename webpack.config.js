@@ -11,10 +11,10 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test:/\.(html|htm)$/i,
-            //      use:'html-withimg-loader', // 解析 html中的图片资源
-            // },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
             {
                 test:/\.(html|htm)$/i,
                     use:'html-withimg-loader', // 解析 html中的图片资源
@@ -41,7 +41,6 @@ module.exports = {
             inject: false
         }),
         new CopyWebpackPlugin({
-
             patterns: [
                 {
                     from: path.resolve(__dirname, './src/assets/css'),
@@ -62,12 +61,6 @@ module.exports = {
                     to: path.resolve(__dirname, './dist/assets/img'),
                 },
             ]
-
-
-
         }),
-
-
-
     ]
 };
