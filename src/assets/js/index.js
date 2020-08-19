@@ -28,31 +28,29 @@ jQuery(".fullslide").slide({
         $(".fullslide .fullslide_bd ul.box li.section").eq(i).addClass("actv").siblings().removeClass("actv");
         switch(oldindex) {
             case 1:
-                $(".a2content .leftbox, .a2content .rightbox").hide();
+                $(".a4content .titimg, .a4content .a4_box .a4_left, .a4content .a4_box .a4_right").hide();
             break;
             case 2:
                 $(".a3content .titimg, .a3content .fourimg, .a3content .articlelist").hide();
             break;
             case 3:
-                $(".a4content .titimg, .a4content .a4_box .a4_left, .a4content .a4_box .a4_right").hide();
+                $(".a2content .leftbox, .a2content .rightbox").hide();
             break;
             case 4:
                 $(".a5content .titimg, .a5content .a5_box .a5_left, .a5content .a5_box .threeimg").hide();
-                oldindex = i;
             break;
             case 5:
                 $(".a6content .titimg, .a6content #wrap3d").hide();
-                oldindex = i;
             break;
             case 6:
                 $(".a7content .titimg, .a7content .liuyanban").hide();
-                oldindex = i;
             break;
         }
         switch(i) {
             case 1: 
-                $(".a2content .leftbox").show().addClass("fadeInLeft");
-                $(".a2content .rightbox").show().addClass("fadeInRight");
+                $(".a4content .titimg").show().addClass("fadeInDown");
+                $(".a4content .a4_box .a4_left").show().addClass("fadeInLeft");
+                $(".a4content .a4_box .a4_right").show().addClass("fadeInRight");
                 oldindex = i;
             break;
             case 2:
@@ -61,9 +59,8 @@ jQuery(".fullslide").slide({
                 oldindex = i;
             break;
             case 3:
-                $(".a4content .titimg").show().addClass("fadeInDown");
-                $(".a4content .a4_box .a4_left").show().addClass("fadeInLeft");
-                $(".a4content .a4_box .a4_right").show().addClass("fadeInRight");
+                $(".a2content .leftbox").show().addClass("fadeInLeft");
+                $(".a2content .rightbox").show().addClass("fadeInRight");
                 oldindex = i;
             break;
             case 4:

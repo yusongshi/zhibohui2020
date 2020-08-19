@@ -231,6 +231,7 @@ dl dd {
   right: 0;
   top: 0;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .bannerAction .danghui img {
@@ -710,8 +711,17 @@ dl dd {
 
 .a5content div.a5_box div.threeimg {
   position: absolute;
-  left: 500px;
+  display: none;
+  width: 600px;
+  height: 340px;
+  left: 580px;
   top: 30px;
+}
+
+.a5content div.a5_box div.threeimg img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .a5content div.a5_box div.threeimg div.xiao {
@@ -930,6 +940,17 @@ dl dd {
 
 /************7两会V观-END*************/
 /*********动画效果**********/
+.hero {
+  animation: 'part' 1.5s ease-in-out 0s infinite;
+  -o-animation: 'part' 1.5s ease-in-out 0s infinite;
+  -webkit-animation: 'part' 1.5s ease-in-out 0s infinite;
+}
+
+img.subiao {
+  animation: 'subiao' 1.5s ease-in-out 0s infinite;
+  -o-animation: 'subiao' 1.5s ease-in-out 0s infinite;
+  -webkit-animation: 'subiao' 1.5s ease-in-out 0s infinite;
+}
 
 @keyframes part {
   0% {
@@ -943,10 +964,16 @@ dl dd {
   }
 }
 
-.hero {
-  animation: 'part' 1.5s ease-in-out 0s infinite;
-  -o-animation: 'part' 1.5s ease-in-out 0s infinite;
-  -webkit-animation: 'part' 1.5s ease-in-out 0s infinite;
+@keyframes subiao {
+  0% {
+    bottom: -80px;
+  }
+  50% {
+    bottom: -95px;
+  }
+  100% {
+    bottom: -80px;
+  }
 }
 
 @keyframes part1 {

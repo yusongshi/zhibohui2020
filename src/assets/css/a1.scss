@@ -200,6 +200,7 @@ dl {
         right: 0;
         top: 0;
         margin: 0 auto;
+        z-index: 2;
         img{
             display: block;
             position: absolute;
@@ -286,6 +287,16 @@ dl {
 /************7两会V观-END*************/
 
 /*********动画效果**********/
+.hero{
+    animation:'part' 1.5s ease-in-out 0s infinite;
+    -o-animation:'part' 1.5s ease-in-out 0s infinite;
+    -webkit-animation:'part' 1.5s ease-in-out 0s infinite;
+}
+img.subiao{
+    animation:'subiao' 1.5s ease-in-out 0s infinite;
+    -o-animation:'subiao' 1.5s ease-in-out 0s infinite;
+    -webkit-animation:'subiao' 1.5s ease-in-out 0s infinite;
+}
 @-ms-keyframes part{
     0%{ margin-top: 0; }
     50%{ margin-top: 15px; }
@@ -306,17 +317,40 @@ dl {
     50%{ margin-top: 15px; }
     100%{ margin-top: 0; }
 }
-
 @keyframes part{
     0%{ margin-top: 0; }
     50%{ margin-top: 15px; }
     100%{ margin-top: 0; }
 }
-.hero{
-    animation:'part' 1.5s ease-in-out 0s infinite;
-    -o-animation:'part' 1.5s ease-in-out 0s infinite;
-    -webkit-animation:'part' 1.5s ease-in-out 0s infinite;
+
+
+@-ms-keyframes subiao{
+    0%{ bottom: -80px; }
+    50%{ bottom: -95px; }
+    100%{ bottom: -80px; }
 }
+@-moz-keyframes subiao{
+    0%{ bottom: -80px; }
+    50%{ bottom: -95px; }
+    100%{ bottom: -80px; }
+}
+@-o-keyframes subiao{
+    0%{ bottom: -80px; }
+    50%{ bottom: -95px; }
+    100%{ bottom: -80px; }
+}
+@-webkit-keyframes subiao{
+    0%{ bottom: -80px; }
+    50%{ bottom: -95px; }
+    100%{ bottom: -80px; }
+}
+@keyframes subiao{
+    0%{ bottom: -80px; }
+    50%{ bottom: -95px; }
+    100%{ bottom: -80px; }
+}
+
+
 
 @-ms-keyframes part1{
     from{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0; transform:scale(8,8);  }
