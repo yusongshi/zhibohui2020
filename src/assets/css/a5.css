@@ -75,6 +75,22 @@
   top: 30px;
 }
 
+.a5content div.a5_box div.threeimg h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 24px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .a5content div.a5_box div.threeimg img {
   display: block;
   width: 100%;
